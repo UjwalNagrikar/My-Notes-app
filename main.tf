@@ -35,7 +35,7 @@ resource "aws_instance" "My-Server" {
     chown -R ubuntu:ubuntu /home/ubuntu/
     cd My-Notes-app-main
     docker build -t notes-app .
-    docker run -d -p 5000:5000 notes-app
+    docker run -d -p 80:5000 notes-app
   EOF
   )
 
